@@ -1,5 +1,11 @@
 {
     "cSpell.words": [
-        "OPENAI"
+        "chromadb",
+        "docstore",
+        "langchain",
+        "metadatas",
+        "OPENAI",
+        "VECTORSTORE",
+        "vectorstores"
     ]
 }

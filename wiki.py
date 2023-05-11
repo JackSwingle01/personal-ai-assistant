@@ -1,4 +1,5 @@
-import wikipedia 
+import wikipedia
+
 
 def get_wiki_page(title: str, search: bool = False) -> wikipedia.WikipediaPage:
 
@@ -19,3 +20,19 @@ def get_wiki_page(title: str, search: bool = False) -> wikipedia.WikipediaPage:
             print("Wiki page not found")
 
     return None
+
+
+def get_wiki_content(title: str, search: bool = False) -> str:
+    page = get_wiki_page(title, search=search)
+    if page:
+        return page.content
+    else:
+        return "No wiki page found."
+
+
+def get_wiki_summary(title: str, search: bool = False) -> str:
+    page = get_wiki_page(title, search=search)
+    if page:
+        return page.summary
+    else:
+        return "No wiki page found."
