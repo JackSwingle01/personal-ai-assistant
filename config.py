@@ -1,0 +1,3 @@
+from SECRET_API_KEY import KEY
+
+OPENAI_API_KEY = KEY
